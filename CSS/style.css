@@ -1,0 +1,434 @@
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background: #EDEDED;
+}
+header {
+    background: #002138;
+    padding: 1em; 
+}
+
+/*_________________NAVIGATION__________________*/
+.nav-container{
+    background: #002138;
+    padding: .25em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container p{
+    color: #EDEDED;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-container a{
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+}
+nav {
+    flex: end;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+   
+}
+
+nav li{
+    color: #EDEDED;
+    padding-left: 1em;
+}
+
+nav a{
+    color: #EDEDED;
+    font-size: 24px;
+}
+
+a:hover{
+    text-decoration: underline 3px;
+    color: #93B8D3;
+    font-weight: 900; 
+}
+
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background: #EDEDED;
+    margin-bottom: 4px;
+}
+
+.menu{
+    display: none;
+}
+
+/*_________________DIVIDER__________________*/
+
+
+.light-blue{
+    height: 1em;
+    background: #93B8D3;
+}
+
+
+/*_________________INDEX__________________*/
+
+.main-title{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*.logo1 {
+    float: left;
+}
+*/
+.title {
+    margin: auto;
+    text-align: center;
+  
+}
+
+.title h1 {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 160px;
+    letter-spacing: 32px;
+    color: #306E9A
+
+}
+.title h2{
+    font-size: 96px;
+    font-weight: 400;
+    margin-top: -20%;
+    letter-spacing:30px;
+    color: #306E9A;
+}
+
+.title p{
+    font-size: 18px;
+    margin-top: -10%;
+}
+
+.my-work h3{
+    font-family:  'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #306E9A;
+}
+
+
+.my-work{
+   margin: 2%;
+   text-align: center;
+
+}
+
+.my-work img{
+    padding: 2%;
+}
+
+/*_________________MY WORK__________________*/
+
+
+.work-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: green;*/
+}
+
+.MARS{
+    display: flex;
+    align-items: center;
+    margin-top: 4em;
+    padding: 4em; 
+}
+
+.DOE{
+    display: flex;
+    align-items: center;
+    padding: 4em; 
+}
+
+.Food-Minder{
+    display: flex;
+    align-items: center;
+    padding: 4em; 
+}
+.work-container  .project {
+   text-align: left;
+    /*background-color: yellow*/
+}
+
+
+.work-container h1 {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color:#306E9A;  
+}
+
+.work-container h2 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color:#002138;
+}
+
+.work-container p{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color:#002138;
+}
+
+.work-container img{
+    width: 600px;
+}
+
+
+/*_________________ABOUT__________________*/
+
+.about-container{
+    display: flex;
+    padding: 4em 10em;
+}
+
+  .left, .right{
+      display: flex;
+      flex-direction: column;
+      margin: 3em;  
+  }
+.Brandon{
+    padding-left: 2em;
+}
+  .download{
+      background-color: #002138;
+      color: #ededed;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      padding: 1em;
+      border-radius: .5em;
+      border: none;
+      align-self: center;
+      box-shadow: rgba(0, 33, 56, 0.3) 16px 16px 37px, rgba(0, 33, 56, 0.22) 16px 16px 37px;
+      
+      
+  }
+  .info {
+    line-height: 24px;
+    font-size: 18px;
+  }
+
+  .all-skills{
+    display: flex;
+  }
+
+  .skill{
+      columns: 2;
+      column-gap: 4em;
+  }
+
+  .all-skills li{
+    padding: .5em;
+  }
+
+  .programs{
+      padding-left: 6em;
+  }
+
+ 
+    
+/*------------------------------------Footer----------------------------------*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: #002138;
+    color: #EDEDED;
+    padding: 1%;
+}
+
+a {
+    padding: 10px;
+}
+
+.social-links, .copyright{
+    margin: 0 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*_________________MEDIA QUERIES__________________*/
+
+@media screen and (max-width: 600px) {
+  /*_________________NAV_________________*/
+    .nav-container{
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+     nav ul{
+         list-style: none;
+         flex-direction: column;
+         justify-items: center;
+         
+         
+     }
+    
+     nav li{
+         padding: .5em;
+         text-align: center;
+         border-top: 1px solid #EDEDED;
+     }   
+     
+     .list{
+         display: none;
+     }
+ 
+     .active{
+         display: block;
+     }
+     
+     .menu{
+         display: block;
+         position: absolute;
+         right: 25px;
+         top: 25px;
+     }
+
+ /*_________________HOME__________________*/    
+.title h1 {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    letter-spacing: 16px;
+    color: #306E9A
+
+}
+.title h2{
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: -18%;
+    letter-spacing:16px;
+    color: #306E9A;
+}
+
+.title p{
+    font-size: 18px;
+    margin-top: -10%;
+}
+
+
+.my-work h3{
+    padding-top: 2em;
+}
+.images .mars{
+    padding-top: 2em; 
+}
+
+.images .food{
+    padding-top: 6em; 
+}
+
+.images .doe{
+    padding-top: 6em; 
+    margin-bottom: 8em;
+}
+
+
+
+     /*_________________ABOUT__________________*/
+
+     .about-container{
+        padding: 0;
+        padding-top: 4em;
+        display: block;
+    }
+
+    .download{
+        border: none;
+    }
+
+    .Brandon{
+        height: 400px;
+        width: 400px;
+        padding: 0;
+    }
+
+    .info h2{
+        font-size: 20px;
+    }
+
+    .info p{
+        line-height: 32px;
+    }
+    
+     .all-skills{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4em;
+     }
+
+     .skill{
+      columns: 2;
+      column-gap: 4em;
+     }
+
+     .all-skills li{
+    padding: .5em;
+     }
+
+      .programs{
+      padding-left: 0;
+      padding-top: 2em;
+      padding-bottom: 4em;
+     }
+
+     /*_________________MY WORK__________________*/
+
+     
+     .MARS{
+         display: block;
+         text-align: center;
+     }
+
+     .DOE{
+        display: block;
+         text-align: center;
+    }
+
+    .Food-Minder{
+        display: block;
+         text-align: center;
+    }
+
+    .work-container img{
+        width: 400px;
+    }
+
+
+        
+ }
